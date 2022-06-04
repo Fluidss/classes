@@ -7,7 +7,7 @@ class File
 
             $this->path = __DIR__ . '/' . $path;
         } else {
-            echo 'неправильный путь к файлу';
+            echo 'Файла не сущетсвует';
         }
     }
     public function read(): string
