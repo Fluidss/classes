@@ -23,4 +23,7 @@ class File
     {
         file_put_contents($path, null);
     }
+    public function get(){
+        
+    }
 }
