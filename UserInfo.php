@@ -24,31 +24,3 @@ class UserInfo
         return $value;
     }
 }
-$userInfo = new UserInfo();
-?>
-<!DOCTYPE html>
-<html lang="ru">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><? echo get_class($userInfo); ?></title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-</head>
-
-<body>
-    <div class="row">
-        <div class="container">
-            <div class="col">
-                <ul class="list-group">
-                    <li class="list-group-item"> Ваш ip: <strong><?= $userInfo->ip ?></strong></li>
-                    <li class="list-group-item">Ваш UserAgent: <strong><?= $userInfo->userAgent ?></strong></li>
-                    <li class="list-group-item">Метод которым Вы пришли: <strong><?= $userInfo->method ?></strong></li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</body>
-
-</html>
